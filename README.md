@@ -27,7 +27,7 @@ This repository contains the **foundational base** for fully functional casino s
 [programs.devnet]
 adminp = "FM2zDi5UkY3UqbZoVVF62KRcj6udk8H2kK14iduevuF5"
 my_program = "CY79LabWnL8x2WFfu2PKYhhVwkVDdKtbFf3FoaAZzy9M"
-
+```
 
 ## 📬 Contact
 
