@@ -1,0 +1,22 @@
+
+# Ignore keypair files
+target/deploy/*.json
+target/deploy/*.so
+target/idl/*.json
+
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+
+
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+
+# Ignore logs
+*.log
