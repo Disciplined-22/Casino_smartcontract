@@ -1,8 +1,5 @@
 use anchor_lang::prelude::*;
-use my_program::program::MyProgram; // your main program crate
-use my_program::cpi::accounts::UpdateGameConfig as MyProgramUpdateGameConfig;
-use my_program::cpi::update_game_config as my_program_update_game_config;
-use my_program::states::GameConfig;
+
 
 declare_id!("FM2zDi5UkY3UqbZoVVF62KRcj6udk8H2kK14iduevuF5"); // Admin program ID
 
@@ -17,16 +14,7 @@ pub mod adminp {
     ) -> Result<()> {
         let cpi_program = ctx.accounts.my_program_program.to_account_info();
 
-        let cpi_accounts = MyProgramUpdateGameConfig {
-            admin_signer: ctx.accounts.admin_signer.to_account_info(),
-            config: ctx.accounts.config.to_account_info(),
-            authority: ctx.accounts.authority.to_account_info(),
-            admin_program: ctx.accounts.admin_program.to_account_info(),
-            system_program: ctx.accounts.system_program.to_account_info(),
-        };
-
-        let cpi_ctx = CpiContext::new(cpi_program, cpi_accounts);
-        my_program_update_game_config(cpi_ctx, new_min, new_max)
+       // Removed the Sensitive code
     }
 }
 
